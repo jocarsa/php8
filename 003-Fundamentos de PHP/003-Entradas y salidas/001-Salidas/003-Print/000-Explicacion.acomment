@@ -1,0 +1,56 @@
+En PHP, `print` es una construcción que se utiliza para mostrar datos o generar salidas, muy similar a `echo`. Aunque comparten funcionalidades similares, existen algunas diferencias sutiles entre `print` y `echo`. `print` se utiliza principalmente para imprimir datos en pantalla y tiene una única forma de uso.
+
+### Sintaxis básica de `print`:
+
+La sintaxis básica de `print` es:
+
+```php
+print "Hola, mundo!";
+```
+
+### Uso con variables:
+
+Puedes utilizar `print` para imprimir el valor de una variable:
+
+```php
+$nombre = "María";
+print "Bienvenida, $nombre";
+```
+
+### Mostrar HTML y texto combinado:
+
+Al igual que con `echo`, puedes mezclar HTML y código PHP dentro de un `print` para generar contenido HTML:
+
+```php
+$titulo = "Página de inicio";
+print "<h1>$titulo</h1>";
+print "<p>Esta es una página de inicio dinámica generada con PHP</p>";
+```
+
+### Concatenación de texto y variables:
+
+También es posible concatenar texto y variables utilizando `print`:
+
+```php
+$edad = 25;
+print "Tienes " . $edad . " años de edad.";
+```
+
+### Conclusiones sobre `print`:
+
+- **Retorno de valor:** A diferencia de `echo`, `print` devuelve siempre 1, lo que significa que puede ser utilizado en expresiones.
+  
+- **Menor flexibilidad:** `print` es menos flexible que `echo`, ya que solo puede imprimir un único valor a la vez y no acepta múltiples parámetros como `echo`.
+
+- **Sintaxis más estricta:** Debido a que `print` es un lenguaje constructivo, se considera una función, por lo que su uso puede ser ligeramente más restrictivo que `echo`.
+
+### Ejemplo de uso de `print`:
+
+```php
+<?php
+$nombre = "Alex";
+print "¡Hola, $nombre!"; // Imprime: ¡Hola, Alex!
+?>
+```
+
+En resumen, `print` y `echo` son usados para propósitos similares en PHP: mostrar datos en la página web o en la consola. La elección entre ellos generalmente se basa en preferencias personales o en requisitos específicos del código. Ambos son útiles para imprimir texto, variables, HTML y valores numéricos, pero `print` tiene una sintaxis más restringida y devuelve un valor, mientras que `echo` es más versátil y rápido en términos de rendimiento.

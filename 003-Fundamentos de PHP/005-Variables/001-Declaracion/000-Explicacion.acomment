@@ -1,0 +1,45 @@
+En PHP, las variables se pueden declarar y asignar valores de varias formas. La declaración de una variable es simplemente la creación de un espacio de almacenamiento en memoria para contener datos. Aquí te muestro las diferentes formas de declarar variables en PHP:
+
+### 1. Declaración básica:
+La forma más simple de declarar una variable en PHP es utilizando el signo de dólar `$` seguido del nombre de la variable y el operador de asignación (`=`) para asignarle un valor.
+
+```php
+$nombre = "Juan"; // Variable llamada $nombre con el valor "Juan"
+$edad = 25; // Variable llamada $edad con el valor 25
+```
+
+### 2. Declaración de múltiples variables en una línea:
+Es posible declarar múltiples variables en una sola línea, separando cada declaración con comas.
+
+```php
+$nombre = "María", $edad = 30, $ciudad = "Madrid";
+```
+
+### 3. Declaración sin asignación inicial:
+También puedes declarar una variable sin asignarle un valor inicial. En PHP, las variables no necesitan ser tipadas, por lo que no es necesario especificar el tipo de dato al declararlas.
+
+```php
+$apellido; // Variable $apellido declarada sin asignar un valor inicial
+```
+
+### 4. Variables variables:
+PHP permite la creación de variables dinámicas usando variables variables. Es decir, el nombre de una variable puede ser almacenado en otra variable y luego utilizado como nombre de variable.
+
+```php
+$variableDinamica = "nombre";
+$$variableDinamica = "Juan"; // Crea una variable $nombre con el valor "Juan"
+echo $nombre; // Muestra: Juan
+```
+
+### 5. Variables superglobales:
+En PHP, hay variables predefinidas conocidas como variables superglobales que están disponibles en todo el script y se pueden utilizar en cualquier ámbito.
+
+```php
+echo $_SERVER['HTTP_USER_AGENT']; // Accede a la variable superglobal $_SERVER
+```
+
+### Nota sobre nombres de variables:
+- Las variables son sensibles a mayúsculas y minúsculas (`$nombre` y `$Nombre` son dos variables diferentes).
+- Los nombres de variables pueden contener letras, números y guiones bajos, pero no pueden comenzar con un número.
+
+Es importante recordar que antes de utilizar una variable en PHP, generalmente es una buena práctica inicializarla asignándole un valor. Declarar variables correctamente ayuda a escribir código más legible y fácil de mantener.

@@ -1,0 +1,76 @@
+En PHP, los arrays multidimensionales son arrays que contienen otros arrays como elementos. Estos pueden ser arrays indexados numéricamente o asociativos, y se utilizan para representar datos de manera más compleja y estructurada. Los arrays multidimensionales pueden tener niveles de profundidad variables, lo que significa que un array puede contener otro array y así sucesivamente, formando una estructura en forma de árbol.
+
+### Ejemplo de arrays multidimensionales:
+
+#### Array Multidimensional Indexado Numéricamente:
+
+```php
+$matriz = array(
+    array("Manzana", "Banana", "Naranja"),
+    array("Fresa", "Melón", "Uva"),
+    array("Pera", "Piña", "Sandía")
+);
+```
+
+Este es un ejemplo de una matriz bidimensional, donde cada elemento principal del array `$matriz` es un array en sí mismo. Se puede acceder a los elementos utilizando índices numéricos:
+
+```php
+echo $matriz[0][1]; // Muestra: Banana
+echo $matriz[1][2]; // Muestra: Uva
+```
+
+#### Array Multidimensional Asociativo:
+
+```php
+$personas = array(
+    array(
+        "nombre" => "Juan",
+        "edad" => 25,
+        "ciudad" => "Madrid"
+    ),
+    array(
+        "nombre" => "María",
+        "edad" => 30,
+        "ciudad" => "Barcelona"
+    ),
+    array(
+        "nombre" => "Pedro",
+        "edad" => 28,
+        "ciudad" => "Sevilla"
+    )
+);
+```
+
+En este ejemplo, `$personas` es un array de arrays asociativos que representa información de personas. Se puede acceder a los elementos utilizando claves asociativas:
+
+```php
+echo $personas[0]["nombre"]; // Muestra: Juan
+echo $personas[1]["ciudad"]; // Muestra: Barcelona
+```
+
+### Operaciones con arrays multidimensionales:
+
+- **Recorrer un array multidimensional con bucles anidados:**
+
+```php
+foreach ($matriz as $fila) {
+    foreach ($fila as $elemento) {
+        echo $elemento . " ";
+    }
+    echo "<br>";
+}
+```
+
+- **Agregar elementos a un array multidimensional:**
+
+```php
+$matriz[2][] = "Limón"; // Agrega un elemento al final del subarray en el índice 2
+```
+
+- **Eliminar elementos de un array multidimensional:**
+
+```php
+unset($personas[1]); // Elimina el elemento en el índice 1 del array de personas
+```
+
+Los arrays multidimensionales en PHP son útiles para representar datos más complejos, como matrices, tablas, registros de bases de datos, entre otros, permitiendo una organización estructurada y accesible de la información.

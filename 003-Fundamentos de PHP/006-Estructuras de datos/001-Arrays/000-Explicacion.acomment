@@ -1,0 +1,76 @@
+En PHP, los arrays son estructuras de datos versátiles y flexibles que permiten almacenar múltiples elementos en una sola variable. Pueden contener una colección de valores, ya sean números, cadenas, otros arrays, objetos y más. Los arrays en PHP pueden ser indexados numéricamente o asociativamente.
+
+### Tipos de arrays en PHP:
+
+#### 1. Arrays indexados numéricamente:
+
+```php
+$frutas = array("Manzana", "Banana", "Naranja", "Fresa");
+```
+
+Los elementos de un array indexado numéricamente se almacenan con índices numéricos comenzando desde 0 y aumentando en orden secuencial. Para acceder a un elemento, se utiliza su índice numérico:
+
+```php
+echo $frutas[0]; // Muestra: Manzana
+echo $frutas[1]; // Muestra: Banana
+```
+
+#### 2. Arrays indexados asociativamente:
+
+En los arrays asociativos, los elementos se almacenan con claves personalizadas (cadenas o números):
+
+```php
+$persona = array(
+    "nombre" => "Juan",
+    "edad" => 30,
+    "ciudad" => "Madrid"
+);
+```
+
+Aquí, "nombre", "edad" y "ciudad" son claves asociadas a valores específicos. Para acceder a un valor, se utiliza su clave asociativa:
+
+```php
+echo $persona["nombre"]; // Muestra: Juan
+echo $persona["edad"]; // Muestra: 30
+```
+
+### Operaciones comunes con arrays en PHP:
+
+#### Agregar elementos a un array:
+
+```php
+$frutas[] = "Pera"; // Agrega un elemento al final del array
+$persona["profesion"] = "Ingeniero"; // Agrega un elemento con clave "profesion"
+```
+
+#### Recorrer un array con un bucle `foreach`:
+
+```php
+foreach ($frutas as $fruta) {
+    echo $fruta . "<br>";
+}
+```
+
+#### Contar elementos de un array:
+
+```php
+echo count($frutas); // Muestra la cantidad de elementos en el array de frutas
+```
+
+#### Verificar si una clave existe en un array:
+
+```php
+if (array_key_exists("nombre", $persona)) {
+    echo "La clave 'nombre' existe en el array persona.";
+}
+```
+
+#### Comprobar si un valor está presente en un array:
+
+```php
+if (in_array("Banana", $frutas)) {
+    echo "La fruta Banana está en el array.";
+}
+```
+
+Los arrays son fundamentales en PHP y se utilizan ampliamente para almacenar y manipular conjuntos de datos de manera eficiente, facilitando la gestión y organización de la información en aplicaciones web.

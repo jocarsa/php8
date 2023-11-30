@@ -1,0 +1,41 @@
+En PHP, las palabras reservadas, también conocidas como palabras clave, son términos predefinidos que tienen un significado especial en el lenguaje y se utilizan para definir la sintaxis, estructuras de control, tipos de datos, funciones, entre otros elementos del código. Estas palabras tienen un propósito específico en el lenguaje y no se pueden utilizar como nombres de variables, constantes u otros identificadores dentro del código. Aquí están algunas de las palabras reservadas más importantes en PHP:
+
+### Palabras reservadas básicas:
+
+- **`break`:** Se utiliza para terminar la ejecución de un bucle (`for`, `while`, `do-while`) o un `switch`.
+- **`case`:** Es utilizado en la estructura `switch` para comparar un valor con varias opciones.
+- **`continue`:** Se usa para saltar a la siguiente iteración en un bucle, omitiendo el resto del código en esa iteración.
+- **`declare`:** Se usa para definir directivas (tales como `ticks`) que afectan al comportamiento del script.
+- **`default`:** Se utiliza en una estructura `switch` como una opción predeterminada si ninguna de las otras opciones coincide.
+- **`do`:** Se utiliza para iniciar un bucle `do-while`.
+- **`else`:** Es parte de la estructura `if-else` y se ejecuta si la condición del `if` no se cumple.
+- **`elseif`:** Similar a `else`, pero permite encadenar múltiples condiciones en una estructura `if`.
+- **`enddeclare`:** Indica el final de un bloque `declare`.
+- **`endfor`:** Indica el final de un bucle `for`.
+- **`endforeach`:** Indica el final de un bucle `foreach`.
+- **`endif`:** Indica el final de un bloque `if`.
+- **`endswitch`:** Indica el final de un bloque `switch`.
+- **`endwhile`:** Indica el final de un bucle `while`.
+- **`for`:** Se usa para iniciar un bucle `for`.
+- **`foreach`:** Se utiliza para iterar sobre matrices (arrays) o colecciones de datos.
+- **`function`:** Se utiliza para definir una función.
+- **`if`:** Se usa para realizar una evaluación condicional.
+- **`return`:** Se utiliza para devolver un valor desde una función.
+- **`switch`:** Se usa para evaluar múltiples condiciones y ejecutar diferentes bloques de código según el caso.
+- **`while`:** Se usa para iniciar un bucle `while`.
+
+### Otros:
+
+- **`class`:** Se usa para definir una clase.
+- **`const`:** Se utiliza para definir una constante.
+- **`final`:** Se usa para declarar una clase o método como "final", lo que impide que sean heredados o anulados.
+- **`implements`:** Se utiliza en una clase para implementar una interfaz.
+- **`interface`:** Se utiliza para definir una interfaz.
+- **`new`:** Se usa para crear una nueva instancia de una clase.
+- **`private`:** Indica que un método o propiedad solo puede ser accedido dentro de la misma clase.
+- **`protected`:** Indica que un método o propiedad solo puede ser accedido dentro de la misma clase o por clases heredadas.
+- **`public`:** Indica que un método o propiedad es accesible desde cualquier lugar.
+- **`static`:** Se utiliza para declarar métodos o propiedades estáticos que pertenecen a la clase en sí, no a una instancia específica.
+- **`trait`:** Se utiliza para definir un trait en PHP.
+
+Estas son algunas de las palabras reservadas más comunes en PHP. Es importante tener en cuenta que estas palabras no pueden ser utilizadas como nombres para variables, constantes o funciones ya que están reservadas para un propósito específico en el lenguaje.

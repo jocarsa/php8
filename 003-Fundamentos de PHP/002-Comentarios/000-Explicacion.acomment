@@ -1,0 +1,55 @@
+**Capítulo 7: Comentarios en PHP: El Arte de Documentar tu Código**
+
+El mundo de la programación es un vasto océano de lenguajes, reglas y sintaxis que dan vida a aplicaciones, páginas web y sistemas complejos que utilizamos a diario. Dentro de este vasto territorio, el lenguaje PHP destaca como una herramienta poderosa para la creación de aplicaciones web dinámicas. En el corazón de toda buena práctica de programación reside un concepto fundamental: la documentación del código. Los comentarios en PHP son esa llave secreta que abre las puertas a la comprensión y mantenimiento de un proyecto.
+
+### La Importancia de Comentar el Código
+
+Imagina un bosque oscuro y denso donde los árboles representan líneas de código. En este bosque, la falta de luz es equivalente a la falta de claridad en la comprensión del código. Los comentarios en PHP actúan como pequeñas luciérnagas que iluminan este bosque, ayudando a los desarrolladores a navegar sin perderse en la maraña de instrucciones.
+
+Los comentarios son fragmentos de texto dentro del código fuente que no se ejecutan. Su propósito es proporcionar información adicional sobre el código y explicar su funcionamiento. En PHP, existen dos tipos principales de comentarios: de una sola línea y de múltiples líneas.
+
+### Comentarios de Una Sola Línea
+
+Los comentarios de una sola línea son perfectos para añadir notas breves y directas sobre una línea específica de código. Se indican mediante dos barras diagonales `//` y todo lo que esté después de ellas hasta el final de la línea será tratado como comentario y no se ejecutará. Por ejemplo:
+
+```php
+// Esta línea suma dos variables y guarda el resultado en $total
+$total = $variable1 + $variable2;
+```
+
+Los comentarios de una sola línea son ideales para aclarar de manera rápida y concisa el propósito o funcionamiento de una instrucción en particular.
+
+### Comentarios de Múltiples Líneas
+
+Cuando la explicación del código requiere más espacio, los comentarios de múltiples líneas son la opción adecuada. Se delimitan por `/*` al inicio y `*/` al final, permitiendo escribir múltiples líneas de texto como comentario. Por ejemplo:
+
+```php
+/*
+  Esta función toma un array como parámetro,
+  lo recorre y realiza una operación específica en cada elemento.
+  Devuelve un nuevo array modificado.
+*/
+function procesarArray($array) {
+    // ...código de la función...
+}
+```
+
+Estos comentarios son útiles para describir funciones extensas, algoritmos complejos o secciones extensas de código que requieran una explicación detallada.
+
+### Buenas Prácticas en la Creación de Comentarios
+
+Crear comentarios efectivos no se trata solo de añadir texto al azar. Requiere un enfoque estratégico para garantizar que la información proporcionada sea clara, concisa y útil para otros desarrolladores. Algunas buenas prácticas incluyen:
+
+1. **Claridad y Concisión:** Los comentarios deben ser claros y directos, evitando ambigüedades. Deben ser lo suficientemente concisos como para transmitir la información necesaria sin ser demasiado extensos.
+
+2. **Mantenimiento Actualizado:** Los comentarios deben mantenerse al día con los cambios en el código. Un comentario desactualizado puede llevar a confusión y errores.
+
+3. **Evitar Comentarios Obvios:** No es necesario comentar cada línea de código. Los comentarios deben proporcionar información útil que no sea evidente a simple vista.
+
+4. **Uso de Convenciones:** Seguir convenciones establecidas en la estructura y estilo de los comentarios ayuda a la legibilidad del código en equipos de desarrollo.
+
+### Conclusiones
+
+Los comentarios en PHP son una herramienta esencial en la caja de herramientas de todo programador. Son más que simples notas; son el puente que conecta la intención del desarrollador con la comprensión de otros y con el mantenimiento futuro del código. Un código bien documentado no solo facilita el trabajo colaborativo, sino que también se convierte en un legado valioso para futuras generaciones de desarrolladores.
+
+En resumen, el arte de comentar el código en PHP no solo radica en añadir texto entre líneas, sino en la habilidad de transmitir conocimiento y comprensión a través de palabras cuidadosamente elegidas. Es una habilidad que, cuando se domina, eleva la calidad y el valor de cualquier proyecto de programación.

@@ -1,0 +1,45 @@
+En PHP, las constantes son identificadores que representan valores que no cambian durante la ejecución del script. A diferencia de las variables, cuyo valor puede modificarse a lo largo del programa, las constantes conservan su valor original durante toda la ejecución del script PHP. Las constantes son especialmente útiles para almacenar valores que no deberían cambiar, como configuraciones, rutas de archivos, valores fijos, etc.
+
+### Reglas para definir constantes en PHP:
+
+1. **Uso de la función `define`:** La función `define()` se utiliza para definir una constante en PHP. Recibe dos argumentos: el nombre de la constante y su valor.
+
+2. **Nombres de constantes:**
+   - Los nombres de constantes deben comenzar con una letra o un guion bajo (`_`).
+   - Pueden contener letras, números y guiones bajos, pero no otros caracteres especiales.
+   - Los nombres de constantes son sensibles a mayúsculas y minúsculas.
+
+3. **Valores de constantes:**
+   - Las constantes pueden contener cualquier tipo de dato, incluidos números, cadenas, arrays y booleanos.
+   - Una vez definidas, no pueden ser redefinidas ni modificadas durante la ejecución del script.
+
+### Sintaxis para definir constantes en PHP:
+
+```php
+define("NOMBRE_CONSTANTE", valor);
+```
+
+### Ejemplos de definición y uso de constantes en PHP:
+
+#### Definición de constantes:
+```php
+define("PI", 3.14159);
+define("MENSAJE_BIENVENIDA", "¡Hola, bienvenido al sistema!");
+define("DIAS_SEMANA", ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]);
+```
+
+#### Uso de constantes:
+```php
+echo PI; // Muestra: 3.14159
+echo MENSAJE_BIENVENIDA; // Muestra: ¡Hola, bienvenido al sistema!
+echo DIAS_SEMANA[0]; // Muestra: Lunes
+```
+
+### Constantes predefinidas en PHP:
+
+PHP también incluye una serie de constantes predefinidas que se pueden utilizar en cualquier momento sin necesidad de definirlas explícitamente. Algunos ejemplos son:
+- `PHP_VERSION`: Versión actual de PHP instalada.
+- `PHP_OS`: Nombre del sistema operativo en el que se está ejecutando PHP.
+- `PHP_INT_MAX`: El valor máximo que puede representar un entero en la plataforma actual, entre otros.
+
+Las constantes predefinidas de PHP proporcionan información útil sobre la configuración del entorno y se pueden utilizar en el desarrollo de aplicaciones para realizar comprobaciones o ajustes según la configuración del entorno de ejecución.

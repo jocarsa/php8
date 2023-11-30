@@ -1,0 +1,90 @@
+Los operadores en PHP son símbolos especiales o palabras clave que se utilizan para realizar operaciones sobre variables, valores y expresiones. Estos operadores permiten realizar cálculos matemáticos, comparaciones, asignaciones, concatenaciones de cadenas y mucho más. Vamos a explorar los diferentes tipos de operadores en PHP:
+
+### 1. Operadores Aritméticos:
+
+Estos operadores se utilizan para realizar operaciones matemáticas básicas.
+
+- **Suma (+):** Se utiliza para sumar dos valores.
+- **Resta (-):** Realiza la resta de dos valores.
+- **Multiplicación (*):** Multiplica dos valores.
+- **División (/):** Divide el primer valor por el segundo.
+- **Módulo (%):** Devuelve el resto de una división.
+- **Incremento (++) y Decremento (--):** Aumentan o disminuyen en uno el valor de una variable.
+
+Ejemplo:
+
+```php
+$a = 10;
+$b = 5;
+
+$suma = $a + $b; // $suma es 15
+$resta = $a - $b; // $resta es 5
+$multiplicacion = $a * $b; // $multiplicacion es 50
+$division = $a / $b; // $division es 2
+$modulo = $a % $b; // $modulo es 0
+$a++; // $a incrementa a 11
+$b--; // $b decrementa a 4
+```
+
+### 2. Operadores de Asignación:
+
+Estos operadores se utilizan para asignar valores a variables.
+
+- **Asignación (=):** Asigna el valor de la derecha a la variable de la izquierda.
+- **Operadores compuestos (+=, -=, *=, /=, %=):** Realizan una operación y luego asignan el resultado a la variable.
+
+Ejemplo:
+
+```php
+$x = 10;
+$y = 5;
+
+$x += $y; // $x es 15 (equivale a $x = $x + $y;)
+```
+
+### 3. Operadores de Comparación:
+
+Estos operadores se utilizan para comparar dos valores y devuelven un valor booleano (true o false).
+
+- **Igual (== o ===):** Compara si dos valores son iguales.
+- **No igual (!= o !==):** Compara si dos valores no son iguales.
+- **Mayor que (>), Menor que (<), Mayor o igual que (>=), Menor o igual que (<=):** Comparan valores numéricos o alfabéticos.
+- **Operador ternario (expresión ? valor_si_verdadero : valor_si_falso):** Realiza una evaluación condicional.
+
+Ejemplo:
+
+```php
+$a = 10;
+$b = 5;
+
+$resultado = ($a > $b); // $resultado es true
+```
+
+### 4. Operadores Lógicos:
+
+Estos operadores se utilizan para combinar expresiones condicionales y devuelven un valor booleano.
+
+- **Y lógico (&& o and):** Devuelve true si ambas expresiones son verdaderas.
+- **O lógico (|| o or):** Devuelve true si al menos una de las expresiones es verdadera.
+- **Negación lógica (! o not):** Niega el valor de una expresión.
+
+Ejemplo:
+
+```php
+$edad = 25;
+$esMayorDeEdad = ($edad >= 18 && $edad <= 65); // $esMayorDeEdad es true
+```
+
+### 5. Operadores de Cadena:
+
+- **Concatenación (.)**: Une dos cadenas de texto.
+
+Ejemplo:
+
+```php
+$cadena1 = "¡Hola, ";
+$cadena2 = "mundo!";
+$mensaje = $cadena1 . $cadena2; // $mensaje es "¡Hola, mundo!"
+```
+
+Estos son solo algunos de los operadores que puedes encontrar en PHP. Son fundamentales para realizar diversas operaciones, desde cálculos matemáticos hasta comparaciones, asignaciones y manipulación de texto, facilitando el manejo de datos y la lógica de los programas escritos en este lenguaje de programación.

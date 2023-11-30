@@ -1,0 +1,68 @@
+Los operadores aritméticos en PHP son utilizados para realizar operaciones matemáticas entre variables y valores. Estos operadores permiten efectuar sumas, restas, multiplicaciones, divisiones, obtener el resto de una división, y realizar incrementos o decrementos en los valores de las variables. A continuación, se detallan los operadores aritméticos más comunes en PHP:
+
+### 1. Suma (+):
+Se utiliza para sumar dos valores o variables.
+
+Ejemplo:
+```php
+$a = 5;
+$b = 10;
+$suma = $a + $b; // $suma es 15
+```
+
+### 2. Resta (-):
+Realiza la resta entre dos valores o variables.
+
+Ejemplo:
+```php
+$a = 15;
+$b = 7;
+$resta = $a - $b; // $resta es 8
+```
+
+### 3. Multiplicación (*):
+Multiplica dos valores o variables.
+
+Ejemplo:
+```php
+$a = 6;
+$b = 4;
+$multiplicacion = $a * $b; // $multiplicacion es 24
+```
+
+### 4. División (/):
+Divide el primer valor por el segundo.
+
+Ejemplo:
+```php
+$a = 20;
+$b = 5;
+$division = $a / $b; // $division es 4
+```
+
+### 5. Módulo (%):
+Devuelve el resto de la división entre dos valores.
+
+Ejemplo:
+```php
+$a = 15;
+$b = 4;
+$modulo = $a % $b; // $modulo es 3 (resto de dividir 15 entre 4)
+```
+
+### 6. Incremento (++) y Decremento (--):
+Son operadores unarios que aumentan o disminuyen en uno el valor de una variable.
+
+Ejemplo de incremento:
+```php
+$x = 5;
+$x++; // $x incrementa a 6
+```
+
+Ejemplo de decremento:
+```php
+$y = 10;
+$y--; // $y decrementa a 9
+```
+
+Estos operadores son fundamentales para realizar cálculos matemáticos básicos en PHP y son ampliamente utilizados en aplicaciones para realizar diversas tareas, desde simples operaciones aritméticas hasta manipulaciones de valores numéricos en aplicaciones más complejas.

@@ -1,0 +1,69 @@
+Los operadores de comparación en PHP se utilizan para comparar dos valores o expresiones y devolver un resultado booleano (true o false) según la relación de comparación entre ellos. Estos operadores son fundamentales para evaluar condiciones y realizar acciones basadas en el resultado de la comparación. Aquí están los operadores de comparación más comunes en PHP:
+
+### 1. Igualdad (==) y estrictamente igual (===):
+- **`==`:** Comprueba si dos valores son iguales, sin considerar el tipo de datos. Si los valores son equivalentes, devuelve true.
+  
+  Ejemplo:
+  ```php
+  $a = 5;
+  $b = '5';
+  $resultado = ($a == $b); // $resultado es true
+  ```
+  
+- **`===`:** Comprueba si dos valores son idénticos tanto en valor como en tipo de datos. Si los valores y tipos son iguales, devuelve true.
+
+  Ejemplo:
+  ```php
+  $a = 5;
+  $b = '5';
+  $resultado = ($a === $b); // $resultado es false
+  ```
+
+### 2. Desigualdad (!=) y estrictamente desigual (!==):
+- **`!=`:** Comprueba si dos valores no son iguales, sin tener en cuenta el tipo de datos. Si los valores no son equivalentes, devuelve true.
+
+  Ejemplo:
+  ```php
+  $a = 10;
+  $b = '5';
+  $resultado = ($a != $b); // $resultado es true
+  ```
+
+- **`!==`:** Comprueba si dos valores no son idénticos, considerando tanto el valor como el tipo de datos. Si los valores o los tipos son diferentes, devuelve true.
+
+  Ejemplo:
+  ```php
+  $a = 10;
+  $b = '10';
+  $resultado = ($a !== $b); // $resultado es true
+  ```
+
+### 3. Mayor (>), Menor (<), Mayor o igual que (>=), Menor o igual que (<=):
+- **`>`:** Comprueba si el valor de la izquierda es mayor que el de la derecha.
+- **`<`:** Comprueba si el valor de la izquierda es menor que el de la derecha.
+- **`>=`:** Comprueba si el valor de la izquierda es mayor o igual que el de la derecha.
+- **`<=`:** Comprueba si el valor de la izquierda es menor o igual que el de la derecha.
+
+Ejemplo:
+```php
+$x = 15;
+$y = 20;
+$esMayor = ($x > $y); // $esMayor es false
+$esMenorIgual = ($x <= $y); // $esMenorIgual es true
+```
+
+### 4. Operador ternario (? :):
+El operador ternario evalúa una expresión y devuelve un valor basado en si la expresión es verdadera o falsa.
+
+Sintaxis:
+```php
+expresion ? valor_si_verdadero : valor_si_falso;
+```
+
+Ejemplo:
+```php
+$edad = 18;
+$mensaje = ($edad >= 18) ? 'Es mayor de edad' : 'Es menor de edad';
+```
+
+Los operadores de comparación son fundamentales para establecer condiciones y realizar decisiones en base a la evaluación de expresiones en PHP. Se utilizan ampliamente en estructuras de control como las declaraciones `if`, `else`, `switch`, entre otras, para controlar el flujo de un programa dependiendo de las condiciones que se cumplan.

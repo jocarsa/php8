@@ -1,0 +1,52 @@
+Los operadores lógicos en PHP se utilizan para combinar o modificar expresiones condicionales y evaluar múltiples condiciones. Estos operadores son fundamentales para construir expresiones lógicas más complejas al unir o invertir condiciones simples. Los operadores lógicos devuelven un valor booleano (true o false) basado en el resultado de la combinación de las expresiones. Aquí están los operadores lógicos más comunes en PHP:
+
+### 1. Operador AND (&& o and):
+- **`&&` o `and`:** Devuelve true si ambas expresiones son verdaderas.
+
+Ejemplo:
+```php
+$edad = 25;
+$esAdulto = ($edad >= 18 && $edad <= 65); // $esAdulto es true
+```
+
+### 2. Operador OR (|| o or):
+- **`||` o `or`:** Devuelve true si al menos una de las expresiones es verdadera.
+
+Ejemplo:
+```php
+$hora = 14;
+$esHorarioLaboral = ($hora >= 9 && $hora <= 17) || $hora === 20; // $esHorarioLaboral es true
+```
+
+### 3. Operador NOT (! o not):
+- **`!` o `not`:** Niega el valor de una expresión. Si una expresión es verdadera, `!` la convierte en falsa, y viceversa.
+
+Ejemplo:
+```php
+$esFinDeSemana = false;
+$noEsFinDeSemana = !$esFinDeSemana; // $noEsFinDeSemana es true
+```
+
+### Combinación de operadores lógicos:
+Los operadores lógicos se pueden combinar para crear expresiones más complejas, utilizando paréntesis para establecer prioridades.
+
+Ejemplo:
+```php
+$valor = 15;
+$condicion = ($valor > 10 && $valor < 20) || $valor === 30; // $condicion es true
+```
+
+### Uso en estructuras de control:
+Los operadores lógicos se utilizan comúnmente en estructuras de control como `if`, `else`, `elseif`, `while`, `for`, entre otros, para controlar el flujo del programa según las condiciones establecidas.
+
+Ejemplo:
+```php
+$edad = 22;
+if ($edad >= 18 && $edad <= 65) {
+    echo "Es un adulto en edad laboral";
+} else {
+    echo "No es un adulto en edad laboral";
+}
+```
+
+Los operadores lógicos son esenciales para controlar el flujo de un programa en PHP, permitiendo tomar decisiones basadas en múltiples condiciones y combinar expresiones para establecer condiciones más complejas.
