@@ -1,0 +1,30 @@
+[
+    {
+        "titulo": "Primera entrada del blog",
+        "autor": "Jose Vicente Carratala",
+        "fecha": "2023-11-30",
+        "contenido": "Este es el contenido de la primera entrada",
+        "imagen": "josevicente.jpg"
+    },
+    {
+        "titulo": "Segunda entrada del blog",
+        "autor": "Jose Vicente Carratala",
+        "fecha": "2023-11-30",
+        "contenido": "Este es el contenido de la segunda entrada",
+        "imagen": "josevicente.jpg"
+    },
+    {
+        "titulo": "Tercera entrada del blog",
+        "autor": "Jose Vicente Carratala",
+        "fecha": "2023-11-30",
+        "contenido": "Este es el contenido de la tercera entrada",
+        "imagen": "josevicente.jpg"
+    },
+    {
+        "titulo": "Cuarta entrada del blog",
+        "autor": "Jose Vicente Carratala",
+        "fecha": "2023-11-30",
+        "contenido": "Este es el contenido de la cuarta entrada",
+        "imagen": "josevicente.jpg"
+    }
+]

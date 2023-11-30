@@ -1,0 +1,23 @@
+[
+    {
+        "titulo":"Proyectos",
+        "autor":"Jose Vicente Carratala",
+        "fecha":"2023-11-30",
+        "contenido":"En esta pagina te voy a hablar de proyectos",
+        "imagen":"josevicente.jpg"
+    },
+    {
+        "titulo":"Sobre mi",
+        "autor":"Jose Vicente Carratala",
+        "fecha":"2023-11-30",
+        "contenido":"En esta pagina te voy a hablar de sobre mi",
+        "imagen":"josevicente.jpg"
+    },
+    {
+        "titulo":"Contacto",
+        "autor":"Jose Vicente Carratala",
+        "fecha":"2023-11-30",
+        "contenido":"En esta pagnia encontramos el menu de navegacion",
+        "imagen":"josevicente.jpg"
+    }
+]
