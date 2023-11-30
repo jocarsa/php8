@@ -1,0 +1,25 @@
+La superglobal `$_ENV` en PHP contiene variables de entorno del sistema, proporcionando acceso a variables y configuraciones del entorno del servidor donde se está ejecutando la aplicación. Estas variables de entorno pueden incluir información como rutas de directorios, configuraciones específicas del servidor, variables globales y más.
+
+### Ejemplo de variables de entorno comunes en `$_ENV`:
+
+- `$_ENV['PATH']`: Ruta de búsqueda para ejecutables del sistema.
+- `$_ENV['HOME']`: Ruta del directorio de inicio del usuario.
+- `$_ENV['USER']`: Nombre de usuario actual.
+- `$_ENV['SERVER_SOFTWARE']`: Descripción del software del servidor web.
+- Otras variables de entorno específicas del servidor y del sistema.
+
+### Uso de `$_ENV`:
+
+```php
+echo $_ENV['PATH']; // Muestra la ruta de búsqueda para ejecutables del sistema
+echo $_ENV['HOME']; // Muestra la ruta del directorio de inicio del usuario
+echo $_ENV['USER']; // Muestra el nombre de usuario actual
+echo $_ENV['SERVER_SOFTWARE']; // Muestra la descripción del software del servidor web
+```
+
+### Consideraciones importantes:
+
+- La disponibilidad y el contenido de las variables de entorno en `$_ENV` pueden variar según la configuración del servidor y el sistema operativo.
+- Las variables de entorno pueden ser configuradas a nivel de sistema operativo, por scripts de inicio, por el servidor web, entre otros.
+
+`$_ENV` es una herramienta útil para acceder a información del entorno del servidor y del sistema operativo. Es especialmente útil para obtener configuraciones específicas del servidor o variables de entorno necesarias para la ejecución de la aplicación. Sin embargo, el acceso a estas variables puede estar restringido por la configuración del servidor o del sistema para proteger la seguridad y la privacidad de la información.

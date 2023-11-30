@@ -1,0 +1,57 @@
+En PHP, `include` y `require` son dos construcciones que se utilizan para insertar y ejecutar el contenido de un archivo en otro archivo PHP. Ambos tienen una funcionalidad similar, pero difieren en la forma en que manejan los errores en caso de que el archivo no se encuentre.
+
+### include:
+
+La construcción `include` se utiliza para incluir y ejecutar un archivo en otro archivo PHP. Si el archivo incluido no se encuentra, PHP emite una advertencia (`Warning`) y continúa ejecutando el script.
+
+```php
+include "archivo.php";
+```
+
+#### Ejemplo de uso de `include`:
+
+```php
+// archivo.php
+<?php
+echo "Este es el archivo incluido.";
+?>
+
+// index.php
+<?php
+include "archivo.php";
+?>
+```
+
+### require:
+
+Por otro lado, `require` también se utiliza para incluir y ejecutar un archivo en otro archivo PHP, pero si el archivo incluido no se encuentra, PHP emite un error fatal (`Fatal error`) y detiene la ejecución del script.
+
+```php
+require "archivo.php";
+```
+
+#### Ejemplo de uso de `require`:
+
+```php
+// archivo.php
+<?php
+echo "Este es el archivo requerido.";
+?>
+
+// index.php
+<?php
+require "archivo.php";
+?>
+```
+
+### Diferencia entre `include` y `require`:
+
+- **`include`**:
+  - Si el archivo incluido no se encuentra, PHP emite una advertencia (`Warning`) pero sigue ejecutando el script.
+  - Es útil para casos donde la inclusión del archivo no es crítica para la funcionalidad del programa.
+
+- **`require`**:
+  - Si el archivo incluido no se encuentra, PHP emite un error fatal (`Fatal error`) y detiene la ejecución del script.
+  - Es útil cuando la inclusión del archivo es esencial para el funcionamiento del programa.
+
+Ambos `include` y `require` son útiles para dividir el código en archivos más pequeños y modulares, lo que facilita la organización y mantenimiento del código en proyectos grandes. La elección entre `include` y `require` dependerá de la importancia de la inclusión del archivo para el funcionamiento del programa.

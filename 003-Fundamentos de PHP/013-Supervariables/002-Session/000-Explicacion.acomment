@@ -1,0 +1,81 @@
+La superglobal `$_SESSION` en PHP se utiliza para almacenar datos de sesión del usuario actual a lo largo de múltiples páginas o interacciones en una aplicación web. Las sesiones en PHP permiten mantener información específica de un usuario mientras navega por el sitio web y se utilizan para mantener el estado de la sesión entre páginas.
+
+### Funcionamiento de `$_SESSION`:
+
+1. **Inicio de sesión**: La sesión se inicia utilizando `session_start()` al comienzo de un script PHP para habilitar el uso de `$_SESSION`.
+
+   ```php
+   <?php
+   session_start();
+   ?>
+   ```
+
+2. **Asignación de variables de sesión**: Una vez iniciada la sesión, se pueden almacenar datos en `$_SESSION` para que estén disponibles en diferentes páginas mientras la sesión esté activa.
+
+   ```php
+   $_SESSION['usuario'] = 'Juan';
+   $_SESSION['rol'] = 'admin';
+   ```
+
+3. **Uso de variables de sesión**: Las variables de sesión se pueden utilizar en cualquier parte del sitio web mientras la sesión esté activa para personalizar la experiencia del usuario o almacenar información relevante.
+
+   ```php
+   echo 'Hola, ' . $_SESSION['usuario'];
+   ```
+
+4. **Cierre de sesión**: La sesión se puede cerrar utilizando `session_destroy()` para eliminar todas las variables de sesión y finalizar la sesión del usuario.
+
+   ```php
+   session_destroy();
+   ```
+
+### Ejemplo de uso de `$_SESSION`:
+
+#### Página de inicio de sesión (`login.php`):
+
+```php
+<?php
+session_start();
+
+if (isset($_POST['submit'])) {
+    // Verificar credenciales (solo un ejemplo, no es seguro)
+    $usuario = $_POST['usuario'];
+    $contrasena = $_POST['contrasena'];
+
+    if ($usuario === 'usuario' && $contrasena === 'contrasena') {
+        $_SESSION['usuario'] = $usuario;
+        header("Location: inicio.php");
+        exit();
+    } else {
+        echo "Credenciales incorrectas";
+    }
+}
+?>
+
+<form action="" method="post">
+    Usuario: <input type="text" name="usuario"><br>
+    Contraseña: <input type="password" name="contrasena"><br>
+    <input type="submit" name="submit" value="Iniciar sesión">
+</form>
+```
+
+#### Página de inicio (`inicio.php`):
+
+```php
+<?php
+session_start();
+
+if (!isset($_SESSION['usuario'])) {
+    header("Location: login.php");
+    exit();
+}
+
+echo 'Hola, ' . $_SESSION['usuario'];
+?>
+
+<a href="cerrar_sesion.php">Cerrar sesión</a>
+```
+
+En este ejemplo simplificado, cuando un usuario inicia sesión correctamente en `login.php`, se almacena su nombre de usuario en `$_SESSION['usuario']`. En `inicio.php`, se verifica si la variable de sesión `$_SESSION['usuario']` está establecida; si no lo está, redirige al usuario de vuelta a la página de inicio de sesión. Además, se muestra un enlace para cerrar sesión, que llevaría a la página `cerrar_sesion.php`, donde se eliminarían todas las variables de sesión mediante `session_destroy()`.
+
+Las variables de sesión en PHP son fundamentales para mantener la información del usuario a lo largo de su experiencia en una aplicación web. Se utilizan comúnmente para almacenar datos como la información del usuario, preferencias, carritos de compra y otros datos específicos de la sesión del usuario.

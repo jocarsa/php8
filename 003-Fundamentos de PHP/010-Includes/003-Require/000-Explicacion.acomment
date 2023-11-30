@@ -1,0 +1,61 @@
+La construcción `require` en PHP se utiliza para incluir y ejecutar el contenido de un archivo en otro archivo PHP en tiempo de ejecución. Al igual que `include`, permite la modularización del código al dividirlo en archivos separados para facilitar la organización y reutilización del mismo.
+
+### Sintaxis de `require`:
+
+```php
+require 'nombre_del_archivo.php';
+```
+
+- `'nombre_del_archivo.php'` es la ruta al archivo que se desea incluir.
+
+### Ejemplo de uso de `require`:
+
+Supongamos que tenemos dos archivos: `header.php` y `footer.php`, que contienen código HTML para encabezados y pies de página, respectivamente. Podemos incluir estos archivos en un archivo principal `index.php` usando `require` de la siguiente manera:
+
+#### header.php
+```php
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi sitio web</title>
+</head>
+<body>
+    <header>
+        <h1>Encabezado</h1>
+        <!-- Otras partes del encabezado -->
+    </header>
+```
+
+#### footer.php
+```php
+    <footer>
+        <!-- Otras partes del pie de página -->
+        <p>Derechos de autor © 2023</p>
+    </footer>
+</body>
+</html>
+```
+
+#### index.php
+```php
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi sitio web</title>
+</head>
+<body>
+    <?php require 'header.php'; ?>
+
+    <!-- Contenido de la página -->
+
+    <?php require 'footer.php'; ?>
+</body>
+</html>
+```
+
+En este ejemplo, al utilizar `require`, el contenido de los archivos `header.php` y `footer.php` se insertará en el archivo `index.php` en los lugares donde se encuentran las respectivas llamadas a `require`. Al igual que `include`, esto permite que el contenido HTML de los archivos `header.php` y `footer.php` se reutilice en múltiples páginas.
+
+La principal diferencia entre `include` y `require` radica en la forma en que manejan errores:
+
+- Si el archivo especificado en `require` no se encuentra, PHP mostrará un error fatal (`Fatal error`) y detendrá la ejecución del script. Esto significa que el archivo requerido es esencial para la ejecución del programa.
+- Por otro lado, `include` mostrará una advertencia (`Warning`) si el archivo no se encuentra, pero permitirá que el script continúe ejecutándose.
